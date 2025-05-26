@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TechButton from "./TechButton.jsx";
 import LinkButton from "./LinkButton.jsx";
-import Slider from "./slider.jsx";
+import Slider from "./Slider.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
