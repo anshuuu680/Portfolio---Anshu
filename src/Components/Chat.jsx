@@ -62,7 +62,6 @@ const ChatBox = ({ onClose }) => {
           "inset 0 1px 1px rgba(255,255,255,0.05), inset 0 -1px 3px rgba(0,0,0,0.95), 0 10px 20px rgba(0,0,0,0.95)",
       }}
     >
-      {/* Close Button */}
       <button
         onClick={onClose}
         aria-label="Close chat"
@@ -72,7 +71,6 @@ const ChatBox = ({ onClose }) => {
         &times;
       </button>
 
-      {/* Glossy Shine */}
       <div
         className="absolute top-0 left-0 w-full h-14 pointer-events-none rounded-t-3xl"
         style={{
@@ -84,7 +82,6 @@ const ChatBox = ({ onClose }) => {
         }}
       />
 
-      {/* Header */}
       <div className="flex items-center gap-4 p-5 border-b border-gray-700 bg-gradient-to-r from-gray-900 via-black to-gray-900 z-10">
         <img
           src="./public/avatar.png"
@@ -101,7 +98,6 @@ const ChatBox = ({ onClose }) => {
         </div>
       </div>
 
-      {/* Messages */}
       <div
         className="flex-1 px-6 py-5 overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 bg-black bg-opacity-90 flex flex-col"
         style={{ scrollBehavior: "smooth" }}
@@ -124,7 +120,6 @@ const ChatBox = ({ onClose }) => {
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Input */}
       <form
         onSubmit={(e) => {
           e.preventDefault();

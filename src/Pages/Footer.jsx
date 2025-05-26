@@ -11,7 +11,6 @@ function Footer() {
 
   return (
     <footer className="w-full min-h-52 bg-black text-white py-6 flex flex-col items-center justify-center gap-6">
-      {/* Scroll Links */}
       <nav className="flex flex-wrap justify-center gap-6 text-sm font-medium">
         
         {links.map((link) => (
@@ -28,7 +27,6 @@ function Footer() {
         ))}
       </nav>
 
-      {/* Social Links */}
       <div className="flex justify-center gap-6 text-xl">
         {socialLinks.map(({ name, url, icon }) => (
           <a
@@ -44,7 +42,6 @@ function Footer() {
         ))}
       </div>
 
-      {/* Footer Text */}
       <p className="text-xs text-gray-400">
         &copy; {new Date().getFullYear()} Anshu. All rights reserved.
       </p>

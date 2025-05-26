@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import TechButton from "./TechButton";
-import LinkButton from "./LinkButton";
-import Slider from "./slider";
+import TechButton from "./TechButton.jsx";
+import LinkButton from "./LinkButton.jsx";
+import Slider from "./slider.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -89,7 +89,6 @@ function Pro({ obj }) {
   ref={containerRef}
   className="max-w-[70vmax] mx-auto border border-gray-900 rounded-lg shadow-lg px-4 py-6 md:py-4 flex flex-col md:flex-row items-center justify-start gap-4 transition-all duration-300 backdrop-blur-md overflow-visible relative"
 >
-  {/* Left Panel */}
   <div
     ref={leftPanelRef}
     className="md:w-[30vmax] h-auto md:h-[35vmax] rounded-xl   bg-[linear-gradient(135deg,_rgba(255,255,255,0.03),_rgba(255,255,255,0.01),_rgba(255,255,255,0.02))] p-6 flex items-center justify-center text-gray-300 shadow-inner"

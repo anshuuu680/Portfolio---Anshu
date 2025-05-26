@@ -12,7 +12,6 @@ function About() {
     const imageElem = imageRef.current;
     const textElem = textRef.current;
 
-    // Image animation: fade in + scale up
     gsap.fromTo(
       imageElem,
       { opacity: 0, scale: 0.8 },
@@ -29,7 +28,6 @@ function About() {
       }
     );
 
-    // Text animation: fade in + slide up
     gsap.fromTo(
       textElem,
       { opacity: 0, y: 40 },
