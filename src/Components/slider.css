@@ -1,0 +1,45 @@
+/* Pagination dots */
+.swiper-pagination-bullets {
+  bottom: 12px !important;
+}
+.swiper-pagination-bullet {
+  background: #777 !important;
+  opacity: 1 !important;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px !important;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+  background: rgb(97, 97, 224) !important; /* Tailwind amber-400 */
+  width: 10px;
+  height: 10px;
+}
+
+/* Navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.682); /* bg-gray-800/70 */
+  width: 35px;
+  height: 35px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgb(87, 87, 160)6a7; /* hover to amber */
+  transform: scale(1.1);
+}
+
+/* Arrow icon size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
