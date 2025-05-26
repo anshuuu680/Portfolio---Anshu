@@ -10,7 +10,7 @@ function App() {
     <div
       className="flex flex-col overflow-x-hidden font-mono"
       style={{
-        backgroundImage: `url('../public/background.svg')`,
+        backgroundImage: `url('/background.svg')`,
       }}
     >
       <Home />
